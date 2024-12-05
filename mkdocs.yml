@@ -1,0 +1,74 @@
+site_name: WorkXpert
+#nav:
+ # - Home: index.md
+  #- About: about.md
+theme: 
+  name: material
+  logo: images/workxpert_logo.png
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mod
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.select
+    - content.code.copy
+
+plugins:
+  - search
+ 
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav: 
+  - Home: Home/index.md
+  - About:
+      - About: About/about.md
+      - Scope: About/scope.md
+  - Features: 
+      - Key Features: Features/features.md
+  - Bussiness Objectives: 
+      - Goals: BussinessObjectives/goals.md
+      - Objectives: BussinessObjectives/objectives.md
+  - Requirements:
+      - Functional Requirements: Requirements/functional.md
+      - Non-Functional Requirements: Requirements/nonFunctional.md
+  - Assumptions and Constraints: 
+      - Assumptions: Assumptions&Constraints/assumptions.md
+      - Constraints: Assumptions&Constraints/constraints.md
+  - Technologies: 
+      - Technologies: Technology/technology.md
+      - Deployment: Technology/deployment.md
+  - Software Overview: 
+      - Software Overview: Software/softwareOverview.md

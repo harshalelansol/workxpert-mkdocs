@@ -1,0 +1,5 @@
+- **Cloud Provider**: AWS
+- **EC2 Instance Type**: t3.micro
+- **Operating System**: Ubuntu / Windows
+- **Database Hosting**: MongoDB
+- **CI/CD Pipeline**: GitHub Actions
